@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" style="margin-left: 20px; background-color:white">
+<head>
+    <!--W3 CSS stylesheet-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <title>Swing</title>
+</head>
+<body>
+<!--page header-->
+<h1>Swing</h1>
+
+<!--ticker input-->
+<form action="http://localhost/" method="post">
+    <input list="tickersymbols" type="text" name="ticker" placeholder="choose ticker">
+    <datalist id="tickersymbols">
+        <option value="aapl">
+        <option value="amzn">
+        <option value="ba">
+        <option value="bac">
+        <option value="brkb">
+        <option value="c">
+        <option value="csco">
+        <option value="cvx">
+        <option value="fb">
+        <option value="goog">
+        <option value="googl">
+        <option value="hd">
+        <option value="intc">
+        <option value="jnj">
+        <option value="jpm">
+        <option value="ma">
+        <option value="msft">
+        <option value="pfe">
+        <option value="pg">
+        <option value="t">
+        <option value="unh">
+        <option value="v">
+        <option value="vz">
+        <option value="wfc">
+        <option value="xom">
+    </datalist>
+    <br>
+    <!--ticker insert submit button-->
+    <input class="w3-button w3-light-gray" type="submit" value="analyze stock">
+</form>
+<br>
+
+<!--sector input-->
+<form action="http://localhost/sector.php" method="post">
+    <input list="sectornames" type="text" name="sector" placeholder="choose sector">
+    <datalist id="sectornames">
+        <option value="financials">
+        <option value="consumer discretionary">
+        <option value="consumer staples">
+        <option value="energy">
+        <option value="healthcare">
+        <option value="industrials">
+        <option value="technology">
+        <option value="telecom">
+    </datalist>
+    <br>
+    <!--sector input submit button-->
+    <input class="w3-button w3-light-gray" type="submit" value="find a stock in this sector">
+</form>
+    
+<!--
+<a href="index.php?tickerinput=10">assign variable to 10</a>
+-->
+</body>
+</html>
